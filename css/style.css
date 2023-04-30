@@ -1,0 +1,116 @@
+:root {
+    --myTxAqua: #5fa5c1;
+    --myBgAqua: #5fa5c1;
+    --myBgAquaTR: #5fa5c173;
+}
+body{
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: var(--myTxAqua);
+    font: 1.1em sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 3px #666666c8;
+    position: relative;
+}
+
+.navbar-menu {
+    display: flex;
+    position: absolute;
+    display: block;
+    padding: 20px;
+    background-color: #041c25de;
+    height: 100vh;
+    top: 60px;
+    right: -250px;
+    transition: 1s;
+}
+
+.navbar-menu li a {
+    padding: 5px 7px;
+    margin: 0 12px;
+    border-radius: 10px;
+    border: 1px solid #807e7ebc;
+    color: var(--myTxAqua);
+    transition: .3s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+
+    background: #09303f;
+    color: #fff;
+}
+
+.navbar-menu li {
+    text-align: center;
+    margin: 20px;
+    scale: 1;
+    transition: 1s;
+}
+
+.navbar-menu li:hover {
+    scale: 1.2;
+}
+
+.icons-navbar {
+    position: absolute;
+    right: 100px;
+}
+#hamburger{
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    display: block;
+    transition: .3s;
+    scale: .9;
+
+}
+#hamburger:hover{
+    scale: 1.1;
+    box-shadow: 0 0 400px inset var(--myBgAquaTR);
+    border-radius: 50%;
+}
+#hamburger div {
+    background-color: #09303f;
+    padding: 2px 18px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 760px) {
+    nav{
+        height: 20px;
+        text-align: center;
+    }
+    .navbar-menu {
+        display: flex;
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
+        height: inherit;
+        top: inherit;
+        right: 300px !important;
+    }
+
+    .icons-navbar {
+        position: absolute;
+        right: 20px;
+
+    }
+
+    .navbar-menu li {
+        margin: 0;
+    }
+    #hamburger{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 30px;
+    }
+
+}
