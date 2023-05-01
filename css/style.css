@@ -3,7 +3,8 @@
     --myBgAqua: #5fa5c1;
     --myBgAquaTR: #5fa5c173;
 }
-body{
+
+body {
     overflow: hidden;
 }
 
@@ -28,6 +29,7 @@ nav {
     top: 60px;
     right: -250px;
     transition: 1s;
+    z-index: 999;
 }
 
 .navbar-menu li a {
@@ -57,10 +59,25 @@ nav {
 }
 
 .icons-navbar {
+    top: 15px;
     position: absolute;
     right: 100px;
 }
-#hamburger{
+
+.icons-navbar i {
+    padding: 5px;
+    border-radius: 5px;
+    transition: 1s;
+
+}
+
+.icons-navbar i:hover {
+    background: #09303f;
+    color: #fff;
+
+}
+
+#hamburger {
     position: absolute;
     top: 11px;
     right: 12px;
@@ -69,11 +86,13 @@ nav {
     scale: .9;
 
 }
-#hamburger:hover{
+
+#hamburger:hover {
     scale: 1.1;
     box-shadow: 0 0 400px inset var(--myBgAquaTR);
     border-radius: 50%;
 }
+
 #hamburger div {
     background-color: #09303f;
     padding: 2px 18px;
@@ -81,11 +100,100 @@ nav {
     border-radius: 3px;
 }
 
+header {
+    position: relative;
+}
+
+.imageFix {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 50vh;
+    background: #09303f;
+}
+
+.content {
+    position: absolute;
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    transition: 1s;
+    background-color: var(--myBgAqua);
+}
+
+.content h1, .content h2 {
+    font: 1.5em sans-serif;
+    color: #09303f;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    opacity: 0;
+}
+
+.content h1:first-child {
+    animation: deyis 6s infinite;
+}
+
+.content h1:nth-child(2), .content h2 {
+    animation: deyis2 6s infinite;
+}
+
+@keyframes deyis {
+    0% {
+        opacity: 1;
+        left: -9999px;
+    }
+    20% {
+        opacity: 1;
+        left: 20px;
+    }
+    25% {
+        opacity: 0;
+        left: 20px;
+    }
+    100% {
+        opacity: 0;
+        left: -9999px;
+    }
+}
+
+@keyframes deyis2 {
+    0% {
+        opacity: 0;
+        left: -9999px;
+    }
+    25% {
+        opacity: 0;
+        left: -9999px;
+    }
+    30% {
+        opacity: 1;
+        left: 20px;
+    }
+    50% {
+        opacity: 1;
+        left: 20px;
+    }
+    55% {
+        opacity: 0;
+        left: 20px;
+    }
+    100% {
+        opacity: 0;
+        left: -9999px;
+    }
+}
+
+
+
 @media only screen and (min-width: 760px) {
-    nav{
+    nav {
         height: 20px;
         text-align: center;
     }
+
     .navbar-menu {
         display: flex;
         background-color: transparent;
@@ -105,10 +213,12 @@ nav {
     .navbar-menu li {
         margin: 0;
     }
-    #hamburger{
+
+    #hamburger {
         display: none;
     }
-    .logo{
+
+    .logo {
         position: absolute;
         left: 30px;
     }
