@@ -22,7 +22,7 @@ setInterval(function() {
     soz1.style.opacity = "1";
     soz2.style.opacity = "0";
   }
-}, 1000);
+}, 2000);
 
 
 

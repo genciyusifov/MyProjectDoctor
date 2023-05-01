@@ -24,7 +24,7 @@ nav {
     position: absolute;
     display: block;
     padding: 20px;
-    background-color: #041c25de;
+    background-color: #041c25ee;
     height: 100vh;
     top: 60px;
     right: -250px;
@@ -138,9 +138,14 @@ header {
     font-weight: 600;
     position: absolute;
     top: 30px;
-    z-index: 1000;
-    left: 100px;
+    z-index: 10;
+    left: 20px;
     transition: 1s;
+    text-shadow: 0 0 5px #09303f;
+    background-color: #09303f;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
     /* transform: translateX(-50%); */
 }
 .content h1{
