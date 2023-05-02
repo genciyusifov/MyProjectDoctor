@@ -4,6 +4,10 @@
     --myBgAquaTR: #5fa5c173;
 }
 
+
+html{
+    overflow: hidden;
+}
 body {
     overflow: hidden;
 }
@@ -25,12 +29,12 @@ nav {
     position: absolute;
     display: block;
     padding: 20px;
-    background-color: #041c25ee;
+    background-color: #041c25;
     width: 210px;
     height: 100vh;
     top: 75px;
     right: -250px;
-    transition: 1s;
+    transition: .5s;
     z-index: 999;
 }
 
@@ -44,10 +48,10 @@ nav {
 }
 
 .navbar-menu li a:hover {
-
     background: #09303f;
     color: #fff;
 }
+
 
 .navbar-menu li {
     text-align: center;
@@ -59,9 +63,16 @@ nav {
 .navbar-menu li:hover {
     scale: 1.1;
 }
+li a i {
+    color: #00d2ff;
+    text-shadow: 0 0 2px #09303f;
+    padding: 0 5px;
+}
+
+
 
 .icons-navbar {
-    top: 20px;
+    top: 15px;
     position: absolute;
     right: 90px;
 }
@@ -107,8 +118,11 @@ header {
     display: flex;
     position: relative;
     box-shadow: 0 0 3px#666;
+    overflow: hidden;
+    /* cursor: pointer; */
 }
 .logo {
+    top: 15px;
     font-size: 1.7em;
     text-shadow: 0 0 2px #000000ad;
 }
@@ -126,7 +140,7 @@ header {
 .imageFix img{
     position: absolute;
     height: 300px;
-    width: 250px;
+    width: 450px;
     bottom: 0;
     right: 100px;
 }
@@ -147,7 +161,8 @@ header {
     position: absolute;
     top: 30px;
     z-index: 10;
-    left: 20px;
+    left: 5px;
+    right: 5px;
     transition: 1s;
     text-shadow: 0 0 5px #09303f;
     background-color: #09303fad;
@@ -162,7 +177,7 @@ header {
 
 
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 900px) {
     nav {
         height: 20px;
         text-align: center;
@@ -177,6 +192,11 @@ header {
     width: 40%;
     top: 40%;
     left: 20px;
+}
+
+.imageFix img{
+    width: 420px;
+    height: 350px;
 }
 
     .navbar-menu {
@@ -209,5 +229,20 @@ header {
         position: absolute;
         left: 30px;
     }
+
+}
+@media only screen and (max-width: 490px) {
+    /* body{
+        background: #041c25;
+    } */
+    .icons-navbar {
+        top: 20px;
+        left: 20px;
+    }
+    .imageFix img{
+        right: 20px;
+        /* left: 30px; */
+    }
+    
 
 }
