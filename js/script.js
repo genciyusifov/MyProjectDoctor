@@ -3,9 +3,9 @@
 let hamburger = document.getElementById("hamburger");
 let navbar = document.getElementById("navo");
 
-navbar.style.right = "-255px";
+navbar.style.right = "-400px";
 hamburger.addEventListener("click", function () {
-  navbar.style.right = navbar.style.right === "-255px" ? "0" : "-255px";
+  navbar.style.right = navbar.style.right === "-400px" ? "0" : "-400px";
 });
 
 
