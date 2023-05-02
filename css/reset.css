@@ -19,6 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	text-decoration: none;
 }
+html{
+	overflow-x: hidden ;
+}
+body{
+	overflow-x: hidden ;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
