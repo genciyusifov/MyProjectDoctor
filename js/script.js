@@ -4,12 +4,10 @@ let hamburger = document.getElementById("hamburger");
 let navbar = document.getElementById("navo");
 
 navbar.style.right = "-255px";
+hamburger.addEventListener("click", function () {
+  navbar.style.right = navbar.style.right === "-255px" ? "0" : "-255px";
+});
 
-function toggleNavbar() {
-    navbar.style.right = navbar.style.right === "-255px" ? "0" : "-255px";
-}
-
-hamburger.addEventListener("click", toggleNavbar);
 
 let soz1 = document.getElementById("soz1");
 let soz2 = document.getElementById("soz2");
