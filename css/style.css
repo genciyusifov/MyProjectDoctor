@@ -1,7 +1,7 @@
 :root {
-    --myTxAqua: #5fa5c1;
-    --myBgAqua: #5fa5c1;
-    --myBgAquaTR: #5fa5c173;
+    --myTxAqua: #3fd5d3;
+    --myBgAqua: #3fd5d3;
+    --myBgAquaTR: #3fd5d373;
 }
 
 
@@ -10,9 +10,9 @@
 nav {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 25px;
     color: #fff;
-    font: 1.1em sans-serif;
+    font: 1em sans-serif;
     box-shadow: 0 0 3px #666666c8;
     z-index: 22;
     position: relative;
@@ -33,7 +33,7 @@ nav {
 }
 
 .navbar-menu li a {
-    padding: 10px 12px;
+    padding: 8px 12px;
     margin: 0 12px;
     border-radius: 10px;
     border: 1px solid #807e7ebc;
@@ -118,8 +118,8 @@ header {
     /* cursor: pointer; */
 }
 .logo {
-    top: 15px;
-    font-size: 1.7em;
+    top: 20px;
+    font-size: 1.6em;
     text-shadow: 0 0 2px #000000ad;
 }
 
@@ -130,7 +130,7 @@ header {
     top: 0;
     width: 50%;
     height: 70vh;
-    background: linear-gradient(109.6deg, rgb(6, 183, 249) 11.2%, rgb(25, 74, 236) 91.1%);
+    background:  linear-gradient(109.6deg, rgb(0, 124, 177) 30.2%, rgb(25, 74, 236) 70.1%);
 }
 .imageFix img{
     position: absolute;
@@ -138,7 +138,13 @@ header {
     width: 420px;
     bottom: 0;
     right: 100px;
+    transition: .5s;
+    scale: 1;
 }
+.imageFix img:hover, .img-card img:hover{
+    scale: 1.1;
+}
+
 
 .content {
     /* position: absolute; */
@@ -146,7 +152,9 @@ header {
     width: 50%;
     height: 70vh;
     transition: 1s;
-    background: url("../img/fixbackground.jpg");
+    /* background: url("../img/fixbackground.jpg"); */
+    background:  linear-gradient(109deg,   rgb(25, 74, 236) 30.2% ,rgb(0, 124, 177) 50.1%);
+
 }
 
 .content h1, .content h2 {
@@ -161,7 +169,7 @@ header {
     transition: 1s;
     text-shadow: 0 0 5px #09303f;
     background-color: #09303fad;
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 3px;
     text-align: center;
     /* transform: translateX(-50%); */
@@ -179,10 +187,10 @@ header {
     margin: 20px 0;
     box-shadow: 0 0 0 inset #5fa5c1;
     scale: 1;
-    transition: .5s ease-in;
+    transition: .6s ease-in;
 }
 .h-1:hover{
-    box-shadow: 0 0 300px inset #09303f;
+    box-shadow:  0  0 400px inset #09303f;
     scale: 1.1;
     color: #fff;
     font-weight: 700;
@@ -214,8 +222,10 @@ main {
 
 
 .img-card img{
+    transition: 0.6s;
     height: 200px;
 }
+
 .card-content h2{
     font: 1.4em sans-serif;
     padding: 10px 0;
