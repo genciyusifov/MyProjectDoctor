@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+main {
+  width: 80%;
+  margin: auto;
+  font-family: Roboto, sans-serif;
+  text-shadow: 0 0 1px  #666;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+#imgolcu {
+  height: inherit;
+}
+
+
+#features {
+  padding: 2rem;
+}
+.features-text{
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+.features-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -600px;
+  background: #09303f;
+  color: #fff;
+  transition: 1s;
+}
+.inverted::after{
+  left: -600px;
+}
+
+.features-text:hover::after{
+  right: 600px;
+}
+.inverted:hover:after{
+  left: -20px;
+}
+.h-1{
+  font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #09303f;
+    text-align: center;
+    border: 1px solid #09303f;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 0 inset #5fa5c1;
+    transition: .4s ease-in;
+}
+.h-1:hover{
+    box-shadow:  0  0 400px inset #09303f;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+  #imgolcu {
+    height: 300px;
+  }
+
+  #features {
+    padding: 5rem;
+  }
+}
+
+.features-group {
+  /* background: rgba(158, 216, 157, 0.3); */
+  background: #43cea2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1a71b3, #43c2ce);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #206dba, #43cec7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1200px) {
+  .features-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 8rem;
+  }
+}
+
+.features-group:last-child {
+  margin-bottom: 0;
+}
+
+.features-image img {
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+  transition: 1s;
+}
+.features-image img:hover {
+  scale: 1.1;
+}
+
+@media (min-width: 1200px) {
+  .features-image {
+    grid-row: 1;
+    grid-column: 1/3;
+    transform: scale(1.2);
+    margin: 0 2rem;
+    align-self: center;
+  }
+
+  .features-image.inverted {
+    grid-column: 3/span 2;
+  }
+}
+
+.features-text {
+  padding: 2rem;
+}
+
+.features-text h1,
+.features-text p {
+  color: #444;
+}
+
+.features-text p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+  .features-text {
+    grid-column: 3/span 2;
+    grid-row: 1;
+    padding: 3rem 3rem 3rem 6rem;
+    place-self: center;
+  }
+
+  .features-text.inverted {
+    grid-column: 1/span 2;
+    padding: 3rem 6rem 3rem 3rem;
+  }
+}
