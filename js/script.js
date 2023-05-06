@@ -26,6 +26,10 @@ setInterval(function() {
   }
 }, 4000);
 
+
+
+
+
   // setInterval(function() {
   //   if (soz1.style.opacity == 0) {
   //     soz2.style.opacity = "0";
@@ -43,7 +47,4 @@ setInterval(function() {
   // }, 4000);
 
 
-
-
-
-
+ 

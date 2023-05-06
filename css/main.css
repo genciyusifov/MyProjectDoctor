@@ -3,6 +3,7 @@
 main {
   width: 80%;
   margin: auto;
+  position: relative;
   font-family: Roboto, sans-serif;
   text-shadow: 0 0 1px  #666;
 }
@@ -24,6 +25,9 @@ img {
   position: relative;
   overflow: hidden;
   transition: 1s;
+}
+.features-text p , h1{
+  color: #fff;
 }
 .features-text::after {
   content: "";
@@ -48,20 +52,25 @@ img {
 }
 .h-1{
   font-size: 1.8em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #09303f;
-    text-align: center;
-    border: 1px solid #09303f;
-    border-top-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #09303f;
+  background: #ffffff;
+  text-align: center;
+  border: 1px solid #09303f;
+  border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 10px;
-    margin: 20px 0;
+    margin: 0 0 20px 0 ;
     box-shadow: 0 0 0 inset #5fa5c1;
     transition: .4s ease-in;
+    width: 50%;
+    margin: auto;
 }
 .h-1:hover{
-    box-shadow:  0  0 400px inset #09303f;
-    color: #fff;
+    /* box-shadow:  0  0 400px inset #09303f84; */
+   background-color:  #09303f;
+    /* text-shadow: 0 0 3px #000; */
+   color: #fff;
 }
 
 @media (min-width: 600px) {
@@ -75,14 +84,7 @@ img {
 }
 
 .features-group {
-  /* background: rgba(158, 216, 157, 0.3); */
-  background: #43cea2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1a71b3, #43c2ce);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #206dba, #43cec7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #09303f;
   margin-bottom: 4rem;
 }
 
@@ -126,7 +128,8 @@ img {
 
 .features-text h1,
 .features-text p {
-  color: #444;
+ color: #f6f6f6;
+ text-shadow: 0 0 2px #666;
 }
 
 .features-text p {
