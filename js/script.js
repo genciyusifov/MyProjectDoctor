@@ -31,6 +31,7 @@ let soz1 = document.getElementById("soz1");
 let soz = "Hər hansısa bir sualınız varsa, bizimlə əlaqə saxlayın və heç bir problem olmadan güvənli bir şəkildə diş sağlamlığınızı qoruyun";
 let i = 0;
 
+
 function yazdir() {
   if (i < soz.length) {
     soz1.innerHTML += soz.charAt(i);
@@ -38,8 +39,8 @@ function yazdir() {
     setTimeout(yazdir, 50);
   }
 }
-setInterval( yazdir() , 1000);
 
+yazdir();
 
   (function () {
 

@@ -111,6 +111,7 @@ header {
     box-shadow: 0 0 3px#666;
     background: #041c25;
     overflow: hidden;
+    height: 90vh !important;
 }
 
 
@@ -135,10 +136,10 @@ header {
     position: absolute;
     height: 300px;
     width: 420px;
-    bottom: 0;
     right: 100px;
     transition: .5s;
     scale: 1;
+    bottom: -142px;
 }
 
 .imageFix img:hover,
@@ -433,6 +434,7 @@ footer {
     .imageFix img {
         width: 570px;
         height: 440px;
+        bottom: 0 !important;
     }
 
     .navbar-menu {
