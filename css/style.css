@@ -167,7 +167,7 @@ header {
     right: 5px;
     transition: 1s;
     text-shadow: 0 0 5px #09303f;
-    background-color: #09303fad;
+    /* background-color: #09303fad; */
     border-radius: 3px;
     text-align: center;
 }
@@ -285,7 +285,8 @@ header {
 
 
 body{
-    background: url("../img/bgmain.jpg")center/cover;
+    background: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg") center/cover;
+    /* background: url("../img/bgmain.jpg")center/cover; */
     background-attachment: fixed;
 }
 
