@@ -57,6 +57,7 @@ img {
   background: #09303f;
   text-align: center;
     padding: 10px;
+    border-radius: 5px;
     /* margin: 20px 0 20px 0 ; */
     box-shadow: 0 0 0 inset #5fa5c1;
     transition: .4s ease-in;

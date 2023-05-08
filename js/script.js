@@ -38,8 +38,7 @@ function yazdir() {
     setTimeout(yazdir, 50);
   }
 }
-
-yazdir();
+setInterval( yazdir() , 1000);
 
 
   (function () {
