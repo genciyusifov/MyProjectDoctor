@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #042936;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: url("../img/dent-scrol.png"); 
+    background-repeat: no-repeat;
+}
+
+
+
+body{
+    /* background: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg") center/cover; */
+    /* background: url("../img/bgmain.jpg")center/cover; */
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+}
+  
 
 nav {
     display: flex;
@@ -18,8 +44,8 @@ nav {
     padding: 20px;
     background-color: #041c25;
     width: 300px;
-    height: 100vh;
-    top: 73px;
+    height: 84vh;
+    top: 80px;
     right: -250px;
     transition: .5s;
     z-index: 999;
@@ -158,19 +184,19 @@ header {
 
 .content h1,
 .content h2 {
-    font: 1.5em sans-serif;
+    font: 1.5em  "Black Ops One";
     color: #ffffff;
-    font-weight: 600;
     position: absolute;
     top: 30px;
     z-index: 10;
     left: 5px;
     right: 5px;
     transition: 1s;
-    text-shadow: 0 0 5px #09303f;
+    text-shadow: 0 0 2px #e1f7ff;
     /* background-color: #09303fad; */
     border-radius: 3px;
     text-align: center;
+    /* text-transform: uppercase; */
 }
 
 
@@ -282,13 +308,6 @@ header {
 .wrapper ul li:hover .slider p {
     opacity: 1;
     transition: all 1s 0.2s ease;
-}
-
-
-body{
-    background: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg") center/cover;
-    /* background: url("../img/bgmain.jpg")center/cover; */
-    background-attachment: fixed;
 }
 
 

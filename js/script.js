@@ -28,19 +28,21 @@ let soz1 = document.getElementById("soz1");
 
 
 
-let soz = "Hər hansısa bir sualınız varsa, bizimlə əlaqə saxlayın və heç bir problem olmadan güvənli bir şəkildə diş sağlamlığınızı qoruyun";
+let soz = "Hər hansısa bir sualınız varsa, bizimlə əlaqə saxlayın və heç bir problem olmadan güvənli bir şəkildə diş sağlamlığınızı qoruyun ...";
 let i = 0;
 
 
 function yazdir() {
   if (i < soz.length) {
     soz1.innerHTML += soz.charAt(i);
-    i++;
-    setTimeout(yazdir, 50);
+    i++; 
+    setTimeout(yazdir, 30);
   }
 }
 
-yazdir();
+  yazdir();
+
+
 
   (function () {
 
@@ -183,7 +185,7 @@ yazdir();
     }
 
     function shiftPoint(p) {
-      TweenLite.to(p, 1 + 1 * Math.random(), {
+      TweenLite.to(p, 1 + (1 * Math.random()), {
         x: p.originX - 50 + Math.random() * 100,
         y: p.originY - 50 + Math.random() * 100, ease: Circ.easeInOut,
         onComplete: function () {
