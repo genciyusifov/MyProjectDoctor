@@ -59,10 +59,9 @@ function yazdir() {
   if (i < soz.length) {
     soz1.innerHTML += soz.charAt(i);
     i++;
-    setTimeout(yazdir, 30);
+    setTimeout(yazdir, 35);
   }
 }
-
 yazdir();
 
 
