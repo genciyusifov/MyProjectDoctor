@@ -29,27 +29,7 @@ img {
 .features-text p , h1{
   color: #fff;
 }
-.features-text::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -600px;
-  background: #09303f;
-  color: #fff;
-  transition: 1s;
-}
-.inverted::after{
-  left: -600px;
-}
 
-.features-text:hover::after{
-  right: 600px;
-}
-.inverted:hover:after{
-  left: -20px;
-}
 .h-1{
   font-size: 1.9em;
   font-family: "Roboto" , sans-serif;
