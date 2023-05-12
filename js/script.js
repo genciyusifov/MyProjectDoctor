@@ -64,5 +64,17 @@ function yazdir() {
 }
 yazdir();
 
+// let ajax  = new XMLHttpRequest()
 
+// function yoxla(){
+//   ajax.open("GET" , "https://api.escuelajs.co/api/v1/products")
+//   ajax.send()
 
+//   ajax.onload = function(){
+//    let x = JSON.parse(ajax.responseText); 
+//    x.forEach(element => {
+//     cards.innerHTML += `<img style = "padding : 20px ; height : 200px ; width :200px " img src="${ element.images[0]}"/>` ;
+//    });
+//   }
+// }
+// yoxla()
