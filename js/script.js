@@ -64,6 +64,20 @@ function yazdir() {
 }
 yazdir();
 
+let obj = {
+  welcome : "Salam",
+  id : 30 
+}
+let obj2 = {
+  welcome : "salam",
+  id : 30 
+}
+
+
+  
+
+
+
 // let ajax  = new XMLHttpRequest()
 
 // function yoxla(){
