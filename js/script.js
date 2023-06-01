@@ -1,11 +1,12 @@
+
 // Menyunun acilisi ve baglanisi
 
 let hamburger = document.getElementById("hamburger");
 let navbar = document.getElementById("navo");
-
 navbar.style.right = "-400px";
 hamburger.addEventListener("click", function () {
   navbar.style.right = navbar.style.right === "-400px" ? "0" : "-400px";
+  hamburger.classList.toggle("is-active")
 });
 
 
@@ -53,8 +54,6 @@ object.forEach(obj => {
 let soz1 = document.getElementById("soz1");
 let soz = "Hər hansısa bir sualınız varsa, bizimlə əlaqə saxlayın və heç bir problem olmadan güvənli bir şəkildə diş sağlamlığınızı qoruyun ...";
 let i = 0;
-
-
 function yazdir() {
   if (i < soz.length) {
     soz1.innerHTML += soz.charAt(i);
@@ -64,31 +63,3 @@ function yazdir() {
 }
 yazdir();
 
-let obj = {
-  welcome : "Salam",
-  id : 30 
-}
-let obj2 = {
-  welcome : "salam",
-  id : 30 
-}
-
-
-  
-
-
-
-// let ajax  = new XMLHttpRequest()
-
-// function yoxla(){
-//   ajax.open("GET" , "https://api.escuelajs.co/api/v1/products")
-//   ajax.send()
-
-//   ajax.onload = function(){
-//    let x = JSON.parse(ajax.responseText); 
-//    x.forEach(element => {
-//     cards.innerHTML += `<img style = "padding : 20px ; height : 200px ; width :200px " img src="${ element.images[0]}"/>` ;
-//    });
-//   }
-// }
-// yoxla()

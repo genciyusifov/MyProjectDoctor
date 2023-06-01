@@ -1,31 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-/* width */
 ::-webkit-scrollbar {
     width: 20px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #042936;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: url("../img/dent-scrol.png"); 
     background-repeat: no-repeat;
 }
-
-
-
 body{
     /* background: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg") center/cover; */
     /* background: url("../img/bgmain.jpg")center/cover; */
     background-color: #f0f0f0;
     background-attachment: fixed;
 }
-  
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -37,7 +29,6 @@ nav {
     position: relative;
     background: #042936;
 }
-
 .navbar-menu {
     position: absolute;
     display: block;
@@ -50,7 +41,6 @@ nav {
     transition: .5s;
     z-index: 999;
 }
-
 .navbar-menu li a {
     padding: 8px 12px;
     margin: 0 12px;
@@ -65,8 +55,6 @@ nav {
     background: #09303f;
     color: #fff;
 }
-
-
 .navbar-menu li {
     text-align: center;
     margin: 30px 0;
@@ -82,10 +70,6 @@ li a i {
     color: #e6eef0;
     padding: 0 5px;
 }
-
-
-
-
 
 .icons-navbar {
     top: 15px;
@@ -115,21 +99,42 @@ li a i {
     display: block;
     transition: .3s;
     scale: .9;
+    z-index: 999999;
 
 }
-
-#hamburger:hover {
-    scale: 1.1;
-    box-shadow: 0 0 400px inset var(--myBgAquaTR);
-    border-radius: 50%;
-}
-
-#hamburger div {
-    background-color: #fdfefe;
-    padding: 2px 18px;
-    margin-top: 5px;
-    border-radius: 3px;
-}
+.hamburger-vec .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-vec:hover{
+    cursor: pointer;
+  }
+  
+  
+  #hamburger.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  #hamburger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  }
 
 header {
     display: flex;
@@ -155,7 +160,6 @@ header {
     top: 0;
     width: 50%;
     height: 70vh;
-    /* background: linear-gradient(109.6deg, rgb(0, 124, 177) 30.2%, rgb(25, 74, 236) 70.1%); */
 }
 
 .imageFix img {
@@ -164,11 +168,11 @@ header {
     width: 420px;
     right: 100px;
     transition: .5s;
-    scale: 1;
-    bottom: -142px;
+    scale: 1.1;
+    bottom: -155px;
 }
 
-.imageFix img:hover,
+
 .img-card img:hover {
     scale: 1.1;
 }
@@ -178,7 +182,6 @@ header {
     width: 50%;
     height: 70vh;
     transition: 1s;
-    /* background: linear-gradient(109deg, rgb(25, 74, 236) 30.2%, rgb(0, 124, 177) 50.1%); */
 
 }
 
@@ -193,10 +196,8 @@ header {
     right: 5px;
     transition: 1s;
     text-shadow: 0 0 2px #e1f7ff;
-    /* background-color: #09303fad; */
     border-radius: 3px;
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 
@@ -207,8 +208,8 @@ header {
     position: absolute;
     right: 20px;
     bottom: 25px;
-    /* z-index: 9999999; */
-    /* transform: translate(-50%, -50%); */
+    z-index: 9999999;
+
 }
 
 .wrapper ul {
@@ -310,13 +311,7 @@ header {
     transition: all 1s 0.2s ease;
 }
 
-
-
-
-
 /* Icons Media end */
-
-
 footer {
     background: #042936;
     height: auto;
@@ -340,7 +335,6 @@ footer {
     text-transform: capitalize;
     line-height: 3rem;
 }
-
 .footer-content p {
     max-width: 400px;
     margin: 10px auto;
@@ -348,7 +342,6 @@ footer {
     font-size: 14px;
     color: #cacdd2;
 }
-
 .socials {
     list-style: none;
     display: flex;
@@ -403,10 +396,6 @@ footer {
     font-size: 18px;
     text-decoration: none;
 }
-
-
-
-
 @media only screen and (max-width: 600px) {
     .icons-navbar {
         top: 20px;
@@ -415,47 +404,30 @@ footer {
 
     .imageFix img {
         right: 20px;
-        /* left: 30px; */
     }
 
-    /* .card-box {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-    } */
-
-
-
 }
-
-
-
 @media only screen and (min-width: 900px) {
     nav {
         height: 20px;
         text-align: center;
     }
-
-
     .content,
     .imageFix {
         width: 50%;
         height: 90vh;
     }
-
-
     .content h1,
     .content h2 {
         width: 40%;
         top: 40%;
         left: 20px;
     }
-
     .imageFix img {
         width: 570px;
         height: 440px;
         bottom: 0 !important;
     }
-
     .navbar-menu {
         display: flex;
         background-color: transparent;
@@ -466,18 +438,11 @@ footer {
         top: inherit;
         right: 300px !important;
     }
-
     .icons-navbar {
         position: absolute;
         right: 20px;
 
     }
-
-    /* .card-box {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-    } */
-
     .navbar-menu li {
         margin: 0;
     }
@@ -491,10 +456,4 @@ footer {
         position: absolute;
         left: 30px;
     }
-
-    /* .card-box{
-        display: flex;
-    } */
-
-
 }
